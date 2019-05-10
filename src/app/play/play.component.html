@@ -1,0 +1,15 @@
+<div style="padding:200px;">
+  <div class="play-list" *ngIf="playList">
+<h3>Welcome to Game City! Your Card Balence Amount is {{amount}}</h3>
+<table style="text-align:center;" *ngFor='let game of playList'>
+  <tbody>
+  <tr>
+  <td style="width:10%">{{game.id}}</td>
+  <td style="width: 40%">{{game.name}}</td>
+  <td style="width: 20%">{{game.price}}</td>
+<td style="width: 30%"><a (click)="playGame(game)">PlayNow</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>

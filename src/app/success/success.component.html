@@ -1,0 +1,16 @@
+<div style="padding:200px;">
+  <div class="success-msg">
+  <div *ngIf="status=='1'">
+    <p>Thank You for Playing {{selectedGame}} </p>
+    <p>Your Balance is Rs {{amount}}</p>
+  </div>
+  
+  <div *ngIf="status=='2'">
+  
+      <p>Thank You for using our Online Gaming Site</p>
+      <p>Insufficient Balance to play {{selectedGame}}</p>
+      <p>Please Topup again !!</p>
+      
+    </div>
+    </div>
+    </div>
